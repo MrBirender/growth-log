@@ -24,6 +24,12 @@ At the start of each month, fill in:
 
 ---
 
+## French
+Daily: one Duolingo lesson + ChatGPT sentence practice. Tracked in `french/french-log.md`.
+Started: 2026-05-23 — absolute beginner.
+
+---
+
 ## DevOps (informal — log as you do it)
 Not a daily practice. Tracked in `devops/devops-log.md` whenever DevOps work happens in company time.
 Already done: Nginx reverse proxy, SSL, CI/CD pipeline with GitHub Actions + SSH + rsync.

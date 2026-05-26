@@ -71,5 +71,36 @@
 
 ---
 
+## API Types
+
+| Type | Full form | Used for | Data format |
+|---|---|---|---|
+| REST | Representational State Transfer | Client-server, browser/mobile | JSON |
+| GraphQL | Graph Query Language | Multiple clients with different data needs | JSON |
+| gRPC | Google Remote Procedure Call | Internal microservice communication | Binary (Protobuf) |
+
+**REST:** stateless, HTTP methods (GET/POST/PUT/DELETE), fixed response shape, easy caching
+**GraphQL:** one endpoint, client defines exactly what it needs, fixes overfetching/underfetching, hard to cache
+**gRPC:** strongly typed `.proto` contract, HTTP/2, ~65% smaller than JSON, very fast
+
+### Message Queues
+- **Producer** — puts message in queue
+- **Consumer** — picks up and processes message
+- **Dead letter queue** — failed messages after max retries
+- Benefits: async processing, retry on failure, decoupling, traffic spike absorption
+- Tools: BullMQ (Bandyl — Redis-backed), RabbitMQ (general), Kafka (massive scale + event replay)
+
+### Kafka vs BullMQ
+- BullMQ: process job → gone. One consumer.
+- Kafka: event stored in stream, multiple consumers can read, can replay past events
+- Bandyl uses BullMQ — right choice at current scale
+
+### Kubernetes (K8s)
+- Manages Docker containers at scale — auto-restart, auto-scaling, load balancing
+- Docker = one container. Kubernetes = fleet manager for hundreds of containers
+- Not needed at Bandyl's current scale
+
+---
+
 ## Key Trade-off: CAP Theorem (to cover in depth later)
 In a distributed system you can only guarantee two of three: **Consistency**, **Availability**, **Partition Tolerance**.

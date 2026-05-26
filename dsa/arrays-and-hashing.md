@@ -198,5 +198,39 @@ class Solution {
 
 ---
 
+### Top K Frequent Elements
+**Problem:** Given `nums[]` and integer `k`, return the `k` most frequent elements.
+
+**Approach 1 — Sorting: O(n log n) time, O(n) space**
+```js
+class Solution {
+    topKFrequent(nums, k) {
+        const map = new Map()
+        for (let i = 0; i < nums.length; i++) {
+            if (map.has(nums[i])) {
+                map.set(nums[i], map.get(nums[i]) + 1)
+            } else {
+                map.set(nums[i], 1)
+            }
+        }
+        const result = Array.from(map.entries()).sort((a, b) => b[1] - a[1])
+        const topK = []
+        for (let i = 0; i < k; i++) {
+            topK.push(result[i][0])
+        }
+        return topK
+    }
+}
+```
+
+**Approach 2 — Bucket Sort: O(n) time (in progress)**
+- Create bucket array of size `nums.length + 1`
+- Index = frequency, value = array of numbers with that frequency
+- Fill buckets from map without sorting
+- Read from end of bucket array, collect k elements
+- **Status:** In progress — resume tomorrow
+
+---
+
 ## Pending / Open Questions
 - Why do arrays often outperform linked lists in real-world benchmarks despite worse theoretical complexity? (cache locality, CPU cache lines — not yet answered)

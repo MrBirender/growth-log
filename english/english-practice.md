@@ -40,6 +40,25 @@ Write 150–200 words:
 | "consitent" | "consistent" | Common misspelling |
 | "importnant" | "important" | Common misspelling |
 | "interrest" | "interest" | Common misspelling |
+| "realted" | "related" | Common misspelling |
+| "buzzword" (singular) | "buzzwords" (plural) | Remember the plural |
+| "problmes" | "problems" | Common misspelling |
+| "desing" | "design" | Common misspelling |
+| "discrmination" | "discrimination" | Common misspelling |
+| "where he born" | "where he was born" | Missing auxiliary verb "was" in past tense |
+| "i felt flute a bit hard" | "I found the flute a bit challenging" | "find something challenging" not "feel something hard" |
+| "rest of the things were felt good" | "the rest felt good" | Remove "were" — double verb error |
+| "not that much struggling was there" | "I did not struggle much with the others" | Awkward inversion — use normal subject-verb order |
+| "Now comes to" | "Moving on to" | Use transition phrases for topic changes |
+
+---
+
+## Weekly Spelling Test
+
+> Every Sunday before the weekly review — spell these from memory.
+
+**Week 1 test words** (from 2026-05-18 to 2026-05-24):
+related, buzzwords, problems, design, discrimination, consistent, important, current, interest
 
 ---
 
@@ -50,3 +69,4 @@ Write 150–200 words:
 | 2026-05-20 | Speaking — ChatGPT voice conversation | 20 min | First session, one-on-one conversation practice |
 | 2026-05-22 | Speaking — ChatGPT real world scenarios | 20-25 min | Explained real world scenarios in conversation format |
 | 2026-05-22 | Speaking | ✗ | Skipped |
+| 2026-05-23 | Speaking — ChatGPT conversation | 30 min | Full session |

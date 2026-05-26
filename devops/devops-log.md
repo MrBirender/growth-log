@@ -62,4 +62,48 @@
 
 ---
 
+---
+
+## Networking Knowledge
+
+### IP Addresses
+
+**Two versions:**
+- IPv4: `192.168.1.1` — 4 numbers (0–255), ~4 billion addresses, running out
+- IPv6: `2001:0db8::8a2e:0370` — much longer, practically unlimited
+
+**Public vs Private:**
+| Type | What it is | Changes? |
+|---|---|---|
+| Public IP | Assigned by ISP, visible to internet | Changes when you switch networks |
+| Private IP | Assigned by router, only inside local network | Changes when you switch networks |
+
+**No permanent private IP** — it is assigned by whichever router you connect to. The only permanent hardware ID is the **MAC address** (burned into network card at factory).
+
+**Private IP reserved ranges (never used on public internet):**
+| Range | Common use |
+|---|---|
+| `192.168.x.x` | Home routers — most common |
+| `10.x.x.x` | Office/enterprise networks |
+| `172.16.x.x – 172.31.x.x` | Less common (WSL uses this) |
+
+**Real example from my machine:**
+- `192.168.1.45` — my laptop on home WiFi
+- `192.168.1.1` — my router (Default Gateway)
+- `172.31.16.1` — WSL virtual network
+- `202.66.164.222` — my public IP (what internet sees)
+- `103.212.121.59` — Bandyl's server public IP
+
+**How NAT works (router translation):**
+- Outgoing: router replaces `192.168.1.45` → `202.66.164.222` so internet can reply
+- Incoming: router only forwards responses to requests you initiated — blocks everything else
+- Result: your laptop is not directly accessible from the internet
+
+**Full request journey:**
+```
+Laptop (192.168.1.45) → Router (192.168.1.1) → Internet (202.66.164.222) → Bandyl (103.212.121.59)
+```
+
+---
+
 *(Add new entries below as DevOps work is done)*

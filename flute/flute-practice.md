@@ -6,10 +6,10 @@
 ---
 
 ## Current Level
-Beginner. Can play sargam (Sa Re Ga Ma Pa Dha Ni Sa) but notes break — airflow and embouchure not consistent yet.
+Beginner. Can play all 7 swaras (Sa Re Ga Ma Pa Dha Ni Sa). Attempting simple songs. Notes still break at higher swaras — airflow not fully consistent yet.
 
 ## Current Focus
-Smooth sargam — getting each note to sound clean without breaking. Consistency of tone before speed.
+Clean tone on all 7 swaras + building song recognition by ear (Sathiya).
 
 ---
 
@@ -35,3 +35,5 @@ A structured 30-minute session:
 | 2026-05-20 | Sargam — first session, establishing habit | Notes breaking, airflow inconsistent |
 | 2026-05-22 | Sa, Re, Ga, Ma — focused on first four notes | Working on clean tone, notes still breaking |
 | 2026-05-22 | Short session — 5 min only | Consistency missed today |
+| 2026-05-23 | Long notes — Sa Re Ga Ma, full 30 min | Steadier airflow, notes less broken than before |
+| 2026-05-25 | All 7 swaras + Sathiya song (10 min) | First attempt at a real song |

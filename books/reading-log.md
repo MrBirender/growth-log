@@ -11,7 +11,7 @@
 
 **Title:** My Autobiography (also known as "Waiting for a Visa" / memoirs)
 **Author:** B.R. Ambedkar
-**Current page / chapter:** Finished chapters 1–5
+**Current page / chapter:** Finished chapters 1–12
 **Started:** 2026-05-20
 **Target finish:** (fill in once you see the length)
 
@@ -35,6 +35,13 @@
 | 2026-05-22 | Ch.3 — It's My Father Who Educated Me | His father consistently pushed him toward education, explaining the importance of becoming a scholar. |
 | 2026-05-22 | Ch.4 — Nurtured with Care and Love | (add one sentence summary when you remember) |
 | 2026-05-22 | Ch.5 — My Father | (add one sentence summary when you remember) |
+| 2026-05-23 | Ch.6 — A Realisation Dawned | Ambedkar lived alone when his father moved to another city for dam construction work. |
+| 2026-05-23 | Ch.7 — Legacy of Principles | Despite constant exposure, he incorporated the principle of never consuming alcohol — discipline over environment. |
+| 2026-05-23 | Ch.8 — A Lesson Learnt | The company of good people can unlock hidden capabilities; remembered quote: "Keep at it and you will find your own way." — Martin Seligman |
+| 2026-05-25 | Ch.9 — Death of My Father | His father was dying but held on just to see Ambedkar one last time — a deeply emotional farewell. |
+| 2026-05-25 | Ch.10 — Stubborn Nature | Childhood incident — refused to take an umbrella to school in the rain out of stubbornness, arrived completely soaked. |
+| 2026-05-25 | Ch.11 — Our Situation | Untouchables had strict caste-based dress codes; British rule gave them opportunities to showcase skills, earning them money and social respect. |
+| 2026-05-25 | Ch.12 — My Time as a Professor | Taught with a distinct style and enforced strict marking; firmly refused to give exam leverage to a student from the untouchable community — equal standards for all. |
 
 ---
 
