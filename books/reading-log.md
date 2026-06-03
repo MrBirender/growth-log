@@ -11,7 +11,7 @@
 
 **Title:** My Autobiography (also known as "Waiting for a Visa" / memoirs)
 **Author:** B.R. Ambedkar
-**Current page / chapter:** Finished chapters 1–12
+**Current page / chapter:** Round Table Conference 2 (4 pages in, partially read)
 **Started:** 2026-05-20
 **Target finish:** (fill in once you see the length)
 
@@ -42,6 +42,12 @@
 | 2026-05-25 | Ch.10 — Stubborn Nature | Childhood incident — refused to take an umbrella to school in the rain out of stubbornness, arrived completely soaked. |
 | 2026-05-25 | Ch.11 — Our Situation | Untouchables had strict caste-based dress codes; British rule gave them opportunities to showcase skills, earning them money and social respect. |
 | 2026-05-25 | Ch.12 — My Time as a Professor | Taught with a distinct style and enforced strict marking; firmly refused to give exam leverage to a student from the untouchable community — equal standards for all. |
+| 2026-05-26 | Ch.13 — Why Satyagrah | (add one sentence summary) |
+| 2026-05-26 | Ch.14 — Why Not Satyagrah | (add one sentence summary) |
+| 2026-05-26 | Ch.15 — Challenges at My Doorstep | (add one sentence summary) |
+| 2026-05-27 | Round Table Conference 1 (first half) | Ambedkar presents the decades-long oppression of Dalit communities — British rule gave relief, but with power transferring back to Indians, the same oppression is feared; demanding reforms before independence. |
+| 2026-05-28 | Round Table Conference 1 (completed) | (add one sentence summary) |
+| 2026-05-30 | Round Table Conference 2 (4 pages, partial) | Disagreements between Ambedkar and Gandhi persisted even after several meetings — no resolution reached. |
 
 ---
 

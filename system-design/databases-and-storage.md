@@ -169,6 +169,59 @@ Request → check cache → hit: return immediately
 - **Write-through** — update cache when DB updates (always fresh, every write hits both)
 - **Cache-aside** — update DB, delete cache entry, next read repopulates (most common)
 
+---
+
+## Caching Deep Dive — Read & Write Strategies
+
+### Read Strategies
+
+**Cache-aside** — app is in control:
+```
+Cache miss → app queries DB → app updates cache → app responds
+Cache hit  → app returns from cache directly
+```
+
+**Read-through** — cache is in control:
+```
+Cache miss → cache queries DB → cache updates itself → cache responds
+Cache hit  → cache responds directly
+```
+App never talks to DB directly in read-through.
+
+| | Cache-aside | Read-through |
+|---|---|---|
+| Cache fails | App still works (hits DB) | App collapses |
+| Stale data | Yes — until TTL expires | No |
+| App complexity | Higher | Lower |
+| Coupling | Loose | Tight (needs cache library) |
+| Cold start | Problem | Same problem |
+
+**Cache stampede (thundering herd):** Multiple requests get cache miss simultaneously → all hit DB at once. Fix: locking (first request locks, others wait) or probabilistic early expiration.
+
+**Bandyl uses:** Cache-aside — most common in Node.js apps.
+
+---
+
+### Write Strategies
+
+**Write-aside** — write to DB directly, invalidate (delete) cache entry. Cache repopulates on next read miss.
+
+**Write-through** — write to cache, cache synchronously writes to DB, then responds. Always fresh, adds write latency.
+
+**Write-behind** — write to cache, cache responds immediately, DB updated asynchronously. Low latency but data loss risk if cache crashes before DB write completes.
+
+| | Write-aside | Write-through | Write-behind |
+|---|---|---|---|
+| Write to | DB directly | Cache → DB (sync) | Cache → DB (async) |
+| Cache freshness | Stale until next read | Always fresh | Fresh immediately |
+| Write latency | Low | Higher | Low |
+| Data loss risk | No | No | Yes |
+| Best for | Read-heavy data | Critical data | Write-heavy, tolerable risk |
+
+**Write amplification** (write-through con): data written frequently but rarely read still hits cache on every write — wasted effort.
+
+**Bandyl recommendation:** User permissions → write-through (critical, consistency over latency).
+
 **Eviction when cache full:**
 - LRU (Least Recently Used) — remove item not accessed longest (Redis default)
 - LFU (Least Frequently Used) — remove item accessed fewest times

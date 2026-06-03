@@ -37,3 +37,6 @@ A structured 30-minute session:
 | 2026-05-22 | Short session — 5 min only | Consistency missed today |
 | 2026-05-23 | Long notes — Sa Re Ga Ma, full 30 min | Steadier airflow, notes less broken than before |
 | 2026-05-25 | All 7 swaras + Sathiya song (10 min) | First attempt at a real song |
+| 2026-05-26 | Pa Dha Ni Sa Re Ga Ma ascending + descending — 30 times | Consistency across full range |
+| 2026-05-27 | Full sargam 10 min + focused on Ma and higher Pa | Higher Pa still breaking — upper register airflow not steady |
+| 2026-05-28 | Ma Pa focused practice + sargam ascending and descending | Consistency on Ma–Pa transition |

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birender Yadav — Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #e8e8e8;
+      padding: 30px 0;
+      color: #1a1a1a;
+    }
+
+    .page {
+      width: 794px;
+      min-height: 1123px;
+      margin: 0 auto;
+      background: #ffffff;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+      padding: 38px 44px 38px 44px;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      padding-bottom: 14px;
+      border-bottom: 3px solid #1e40af;
+      margin-bottom: 16px;
+    }
+
+    .header-name {
+      font-size: 30px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+
+    .header-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #1e40af;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 5px;
+    }
+
+    .header-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 7px;
+      font-size: 11.5px;
+      color: #475569;
+    }
+
+    .header-contact a { color: #475569; text-decoration: none; }
+    .header-contact a:hover { color: #1e40af; }
+
+    /* ── SECTION ── */
+    .section { margin-bottom: 16px; }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1e40af;
+      padding-bottom: 4px;
+      border-bottom: 1.5px solid #bfdbfe;
+      margin-bottom: 10px;
+    }
+
+    /* ── SUMMARY ── */
+    .summary {
+      font-size: 12.5px;
+      color: #374151;
+      line-height: 1.65;
+    }
+
+    /* ── EXPERIENCE ── */
+    .job { margin-bottom: 14px; }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .job-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .job-date {
+      font-size: 11px;
+      color: #64748b;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .job-company {
+      font-size: 12px;
+      color: #1e40af;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    .job-product {
+      font-size: 11.5px;
+      color: #64748b;
+      font-style: italic;
+      margin-top: 1px;
+      margin-bottom: 5px;
+    }
+
+    .job ul { padding-left: 14px; }
+
+    .job li {
+      font-size: 11.8px;
+      color: #374151;
+      line-height: 1.58;
+      margin-bottom: 3px;
+    }
+
+    .job li strong { color: #0f172a; }
+
+    .tech-stack {
+      font-size: 10.5px;
+      color: #94a3b8;
+      margin-top: 5px;
+    }
+
+    .tech-stack b { color: #64748b; }
+
+    /* ── PROJECTS ── */
+    .project { margin-bottom: 9px; }
+
+    .project-name {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-desc {
+      font-size: 11.5px;
+      color: #475569;
+      line-height: 1.55;
+      margin-top: 2px;
+    }
+
+    /* ── BOTTOM TWO-COL ── */
+    .two-col {
+      display: flex;
+      gap: 30px;
+    }
+
+    .col-left { flex: 1.3; }
+    .col-right { flex: 1; }
+
+    /* ── SKILLS ── */
+    .skill-row { margin-bottom: 6px; }
+
+    .skill-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #374151;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .skill-value {
+      font-size: 11.5px;
+      color: #475569;
+      margin-top: 1px;
+      line-height: 1.5;
+    }
+
+    /* ── EDUCATION ── */
+    .edu-degree {
+      font-size: 13px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-school {
+      font-size: 12px;
+      color: #1e40af;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .edu-year {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    .edu-detail {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 3px;
+      line-height: 1.5;
+    }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .page { width: 100%; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-name">Birender Yadav</div>
+    <div class="header-title">Backend Engineer &nbsp;·&nbsp; Node.js · TypeScript · System Design · DevOps</div>
+    <div class="header-contact">
+      <span>Bangalore, Karnataka</span>
+      <a href="mailto:dev.birender@gmail.com">dev.birender@gmail.com</a>
+      <a href="https://linkedin.com/in/devbirender">linkedin.com/in/devbirender</a>
+      <a href="https://github.com/MrBirender">github.com/MrBirender</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary">Backend engineer with 2+ years of experience building multi-tenant B2B SaaS from scratch. At Bandyl, designed and owned critical platform infrastructure — a JWT-embedded RBAC system with row-level visibility, a 3-tier multi-channel notification microservice, and per-customer isolated database connection pools supporting 500+ tenants. Takes features from architecture decision to schema design to production deployment.</p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div>
+          <div class="job-title">Full-Stack Developer</div>
+          <div class="job-company">Winspire Tech Pvt. Ltd. &nbsp;·&nbsp; Bangalore</div>
+          <div class="job-product">Bandyl — multi-tenant B2B SaaS platform for HR and recruitment operations</div>
+        </div>
+        <div class="job-date">May 2024 – Present</div>
+      </div>
+      <ul>
+        <li>Architected a <strong>fully customizable RBAC system</strong> — ~40–50 granular permission keys embedded directly into JWT (zero runtime API calls for auth checks); row-level visibility (Own / Team / Reportees / All) backed by ContactHierarchy and Team models; checkPermission middleware applied across all ATS, HRMS, and CRM routes</li>
+        <li>Built a <strong>multi-channel notification microservice</strong> — 3-tier provider scope (Org → App → User fallback chain), 6 delivery channels (SMTP, SendGrid, AWS SES, WhatsApp, Twilio, push), AES-256-GCM credential encryption, auto-provisions notification tenant on customer signup with retry; wired 14 ATS event triggers; built the full admin settings UI (Providers, Templates, Action Bindings, Test Email)</li>
+        <li>Replaced a shared 100-connection MySQL pool with <strong>per-customer isolated connection pools</strong> — CustomerPoolManager with formula-based limits (ceil(maxUsers/3) + 2), 5-min config cache, 30-min idle cleanup; worst-case 3,880 active connections across 500+ tenants, well within MySQL's 9,190-connection ceiling</li>
+        <li>Designed and built the <strong>Super Admin portal</strong> from scratch — tenant onboarding, provisioning status with retry/reset, RBAC configuration, notification channel setup; full ownership from DB schema to production deployment</li>
+        <li>Developed <strong>ATS, HRMS, CRM, and Vendor Management modules</strong> — candidate pipeline, employee records, project engagement tracking, timesheet management, delivery workflows</li>
+        <li>Set up <strong>CI/CD pipelines</strong> with GitHub Actions (self-hosted + cloud runners); configured Nginx as reverse proxy routing traffic across multiple Node.js services; managed production server (16GB RAM, MySQL + PostgreSQL + Redis) via PM2</li>
+      </ul>
+      <div class="tech-stack"><b>Tech:</b> Node.js · TypeScript · Express.js · React.js · MySQL · PostgreSQL · Redis · BullMQ · Socket.IO · Nginx · Docker · GitHub Actions · AWS SES · Cloudflare</div>
+    </div>
+
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="project">
+      <div class="project-name">Notification Microservice &nbsp;—&nbsp; Bandyl</div>
+      <div class="project-desc">Designed a 3-tier provider scope (ORG / APP / USER level) with automatic fallback — if a user hasn't configured a provider, it falls back to app-level, then org-level. Per-action channel preferences configurable; provider credentials encrypted with AES-256-GCM using a rotating key. Auto-provisions a notification tenant on every customer signup (retry on failure). 6 delivery channels, action-template binding with compile-time variable warnings, 14 ATS event controllers migrated to the unified sender.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">RBAC + Row-Level Visibility &nbsp;—&nbsp; Bandyl</div>
+      <div class="project-desc">Centralized permission registry (~40–50 keys across ATS, HRMS, CRM) seeded from a master list and embedded into JWT at login — no auth API call on protected routes. Row-level data visibility (Own / Team / Reportees / All) resolved via ContactHierarchy (reporting chain) and Team + TeamMember models. VisibilityHelper caches resolved scope per user; QueryFormatterV2 builds dynamic SQL WHERE clauses per request.</div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Per-Customer Connection Pool Manager &nbsp;—&nbsp; Bandyl</div>
+      <div class="project-desc">CustomerPoolManager replaced a single shared 100-connection MySQL pool that couldn't scale per-tenant. Lazily creates an isolated pool per customer on first request; limit formula: ceil(maxUsers/3) + 2; 5-min config TTL prevents excessive DB reads; 30-min idle cleanup reclaims connections. Prevents noisy-neighbor contention across tenants. Supports 500+ customers with ~3,880 worst-case active connections — 42% of MySQL's 9,190 ceiling.</div>
+    </div>
+  </div>
+
+  <!-- SKILLS + EDUCATION (two-col) -->
+  <div class="two-col">
+    <div class="col-left">
+      <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skill-row">
+          <div class="skill-label">Backend</div>
+          <div class="skill-value">Node.js, TypeScript, Express.js, REST APIs, JWT, BullMQ, Socket.IO</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Databases</div>
+          <div class="skill-value">PostgreSQL, MySQL, MongoDB, Redis</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">DevOps</div>
+          <div class="skill-value">GitHub Actions (CI/CD), Nginx, Docker, PM2, Linux</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Frontend</div>
+          <div class="skill-value">React.js, JavaScript, HTML, CSS</div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label">Cloud & Tools</div>
+          <div class="skill-value">AWS SES, Cloudflare, Git, Postman</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-degree">Full Stack Web Development</div>
+        <div class="edu-school">Masai School &nbsp;·&nbsp; Bangalore</div>
+        <div class="edu-year">May 2023 – Apr 2024 &nbsp;·&nbsp; 1-Year Intensive Program</div>
+        <div class="edu-detail">JavaScript, Node.js, React.js, SQL, DSA, System Design</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
